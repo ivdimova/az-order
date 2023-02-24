@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "az-order/az-order",
+	"version": "0.1.0",
+	"title": "A-Z Order",
+	"category": "widgets",
+	"icon": "list-view",
+	"description": "Show A-Z aplabetical ordered posts",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "az-order",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"attributes": {
+		"title": {
+			"type": "string"
+		}
+	}
+}
