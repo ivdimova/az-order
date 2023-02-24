@@ -7,7 +7,7 @@ import { __ } from '@wordpress/i18n';
 /**
  * React hook that is used.
  */
-import { RichText, useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps } from '@wordpress/block-editor';
 
 /**
  * Editor syles.
@@ -25,14 +25,8 @@ export default function Edit(props) {
 		title
 	} = attributes
 	return (
-		<p { ...useBlockProps() }>
+		<div { ...useBlockProps() }>
 			{ __( 'A-Z ordered posts below', 'az-order' ) }
-			<RichText
-					className="user-list__title"
-					placeholder={ __( 'Title', 'az-order' ) }
-					tagName="h2"
-					value={ title }
-					onChange={ ( title ) => setAttributes( { title } ) }/>
-		</p>
+		</div>
 	);
 }

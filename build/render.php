@@ -1,5 +1,10 @@
 <?php
+/**
+ * AZ Order Block Display.
+*/
+
 namespace AZOrder;
+
 use AZOrder\Shortcode; 
 ?>
 <div <?php echo get_block_wrapper_attributes(); ?>>

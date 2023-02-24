@@ -24,7 +24,9 @@ AZ Order allows you to choose the post type and taxonomy that you want to sort i
 3. Upload
 4. Activate the plugin on the WordPress Plugin Dashboard
 5. Navigate to AZ Order Admin tab and save the desired post type (page or your own custom post type). If there is no value the default order is sorting regular WordPress posts.
+6. The plugin can be used as shortcode or as a Gutenberg block.
 
+### Development
 = Run `composer install`
 = Run `npm install` to build the assets
  
