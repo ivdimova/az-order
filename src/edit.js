@@ -8,6 +8,7 @@ import { __ } from '@wordpress/i18n';
  * React hook that is used.
  */
 import { useBlockProps } from '@wordpress/block-editor';
+import ServerSideRender from '@wordpress/server-side-render';
 
 /**
  * Editor syles.
@@ -27,6 +28,10 @@ export default function Edit(props) {
 	return (
 		<div { ...useBlockProps() }>
 			{ __( 'A-Z ordered posts below', 'az-order' ) }
+			<ServerSideRender
+                block="az-order/az-order"
+                attributes={ attributes }
+            />
 		</div>
 	);
 }
